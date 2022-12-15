@@ -53,6 +53,39 @@ section{
   margin-top:0;
 }
 
+.card--star
+{
+  margin-right: 5px;
+  height:14px;
+  width:15px;
+}
+
+.card
+{
+  box-shadow: 5px 10px;
+  border-radius: 8px;
+  width:175px;
+  font-size: 12px;
+  margin:5px
+}
+
+.card--image 
+{
+  width:100%;
+  border-radius: 9px;
+}
+
+.bold
+{
+  font-weight: bold;
+}
+
+.main-2
+{
+  display: flex;
+  flex-direction: row;
+}
+
 
 /* .App-logo {
   height: 40vmin;
