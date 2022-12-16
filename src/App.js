@@ -3,18 +3,34 @@ import './App.css';
 import Navbar from './Components/Navbar';
 import Hero from './Components/Hero';
 import Card from './Components/Card';
+import data from './data';
 
 function App() {
+  const cardElement = data.map(elements => 
+    {
+      return (
+      <Card 
+      img = {elements.img}
+      rating = {elements.rating}
+      noOfPeople = {elements.noOfPeople}
+      country = {elements.property}
+      topic = {elements.topic}
+      price = {elements.price}
+      />
+      )
+    })
   return (
     <div>
          <Navbar/>
          <Hero/>
+         {cardElement}
 
          <div className = "cards--div">
+          
 
         
-         <Card
-         img = "./scuba-diving.png"
+         {/* <Card
+         img = "./ankur-warikoo.png"
          rating = "5.0"
          noOfPeople = "16"
          country = "USA"
@@ -23,6 +39,7 @@ function App() {
          />
 
          <Card
+         img = "./scuba-diving.png"
          rating = "4"
          noOfPeople = "14"
          country = "India"
@@ -31,12 +48,13 @@ function App() {
          />
 
         <Card
+        img = "./japan-forest.png"
          rating = "3.9"
          noOfPeople = "140"
          country = "Nigeria"
          topic = "Devotion"
          price = "485"
-         />
+         /> */}
 
          </div>
     </div>

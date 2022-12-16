@@ -1,10 +1,7 @@
 import React from 'react';
 
 import star from "../images/star.png";
-import forest from "../images/japan-forest.png";
-import scuba from "../images/scuba-diving.png";
-import canyon from "../images/grand-canyon.png";
-import bike from "../images/mountain-bike.png";
+import data from "../data.js";
 
 
 function Card(props)
