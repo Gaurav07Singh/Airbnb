@@ -6,16 +6,12 @@ import Card from './Components/Card';
 import data from './data';
 
 function App() {
-  const cardElement = data.map(elements => 
+  const cardElement = data.map(item => 
     {
       return (
       <Card 
-      img = {elements.img}
-      rating = {elements.rating}
-      noOfPeople = {elements.noOfPeople}
-      country = {elements.property}
-      topic = {elements.topic}
-      price = {elements.price}
+       key = {item.id}
+       item = {item}
       />
       )
     })
@@ -23,12 +19,10 @@ function App() {
     <div>
          <Navbar/>
          <Hero/>
-         {cardElement}
+         <section className = "cards--div">
+             {cardElement}
+         </section>
 
-         <div className = "cards--div">
-          
-
-        
          {/* <Card
          img = "./ankur-warikoo.png"
          rating = "5.0"
@@ -56,7 +50,7 @@ function App() {
          price = "485"
          /> */}
 
-         </div>
+         
     </div>
   );
 }
